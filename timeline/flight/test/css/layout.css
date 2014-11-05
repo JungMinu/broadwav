@@ -1,0 +1,629 @@
+/*
+*	Theme Name: GDE Broadway Layout ver 1.0
+*	Theme URI: http://Desirenvy.COM
+*	Author: Greed Desire Envy
+*	Author URI: http://Desirenvy.COM
+*	Description: Innovative Toilet Shower
+*	Version: 1.0
+*	License: GNU General Public License v2 or later
+*	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*	Tags: Broadway, Broadway.com
+*	Text Domain: Broadway
+*
+*	------------- Greed Desire Envy -------------
+*	Last Update : 2014 / 07 / 09
+*	Phone : +82 10 9999 7990
+*	Desirenvy @ gmail . com
+*	Desirenvy . COM
+*	Copyright At GDE All Right Reserved. By GDE.
+*	Licenses are CC - BY - NC - ND
+*	Sub-Package GDE
+*	since 2014 GDE - Broadway Layout ver 1.0
+*	------------- Greed Desire Envy -------------
+*/
+
+/* CSS Written Order */
+
+/*
+*	1. Main Properties
+*		1) Position					: Relative, Absolute, Fixed;
+*		2) Display					: Block , None;
+*		3) Float					: Left , Right;
+*		4) Visibility				: hidden;
+*		5) Opacity					: 1;
+*		
+*	2. Location
+*		1) Top						: 0px;
+*		2) Bottom					: 0px;
+*		3) Left						: 0px;
+*		4) Right					: 0px;
+*		
+*	3. Scale
+*		1) Width					: 100%
+*			1-1) Min-Width				: 320px;
+*			1-2) Max-width				: 1200px;
+*		2) Height					: auto;
+*			2-1) Min-Height				: 150px;
+*			2-2) Max-Height				: 300px;
+*
+*	4. Margin, Padding
+*		1) Margin					: 0px auto;
+*		2) Padding					: 0px 10px 0px 10px;
+*		
+*	5. Background
+*		1) Background-color			: #FFFFFF
+*		2) Background-image			: url('../images/background.png')
+*		3) Background				: Black url('../images/background.png') 5px 5px no-repeat;
+*		4) filter					: none;
+*		
+*	6. Border
+*		1)Border					: 1px solid rgba(220, 220, 220, 1);
+*
+*	7. Border-Radius
+*		1) -webkit-Border-radius	: 13px;
+*		2) -moz-Border-radius		: 13px;
+*		3) Border-radius			: 13px;
+*		
+*	8. Font Properties
+*		1) Color					: #CCCCCC;
+*		2) Font-Size				: 10.5pt;
+*		3) Line-Height				: 25px;
+*		4) Letter-Spacing			: 0.1px;
+*		5) Text-Decoration			: none, underline;
+*		6) Text-Shadow				: 0 0 3px #444444;
+*		
+*	9. Cursor or ETC
+*		1) Cursor					: pointer;
+*		2) list-style				: none;
+*		3) Outline					: none;
+*
+*	10. Z-index
+*		1) Z-index					: 1000;
+*		
+*	11. Box-sizing
+*		1) -webkit-Box-sizing		: border-box;
+*		2) -moz-Box-sizing			: border-box;
+*		3) -ms-Box-sizing			: border-box;
+*		4) -o-Box-sizing			: border-box;
+*		5) Box-sizing				: border-box;
+*
+*	12. Box-shadow
+*		1) -webkit-Box-shadow		: 0px 0px 10px rgba(0, 0, 0, 0.2);
+*		2) -moz-Box-shadow			: 0px 0px 10px rgba(0, 0, 0, 0.2);
+*		3) -o-Box-shadow			: 0px 0px 10px rgba(0, 0, 0, 0.2);
+*		4) -ms-Box-shadow			: 0px 0px 10px rgba(0, 0, 0, 0.2);
+*		5) Box-shadow				: 0px 0px 10px rgba(0, 0, 0, 0.2);
+*
+*	13. Transition
+*		1) -webkit-Transition		: all 0.5s ease;
+*		2) -moz-Transition			: all 0.5s ease;
+*		3) -o-Transition			: all 0.5s ease;
+*		4) Transition				: all 0.5s ease;
+*		
+*	This Written Order Is Pretty Adaptability In This CSS Page.
+*	
+*	***** Please Do Not Using Reference Doc *****
+*	
+*/
+
+
+/* Character encoding to UTF-8 */
+@charset "utf-8";
+/* Web font import*/
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v8/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v8/toadOcfmlt9b38dHJxOBGFkQc6VGVFSmCnC_l7QZG60.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(http://fonts.gstatic.com/s/sourcesanspro/v8/toadOcfmlt9b38dHJxOBGHiec-hVyr2k4iOzEQsW1iE.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://fonts.gstatic.com/s/sourcesanspro/v8/M2Jd71oPJhLKp0zdtTvoMzNrcjQuD0pTu1za2FULaMs.woff) format('woff');
+}
+
+/* ebrima */
+
+body {
+	width					: 100%;
+	height					: 100%;
+	margin					: 0;
+	padding					: 0;
+	background				: #000000;
+	overflow				: hidden;
+}
+
+#desktop {
+	position				: absolute;
+	display					: block;
+	
+	top						: 0;
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+	
+	width					: 1280px;
+	height					: 1024px;
+	
+	margin					: 0 auto;
+	padding					: 0;
+	
+	background				: url('../images/desktop.png');
+	
+	z-index					: 500;
+}
+#swave_ico {
+	position				: absolute;
+	display					: block;
+	
+	top						: 0;
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+	
+	width					: 75px;
+	height					: 75px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	z-index					: 1600;
+}
+#swave_loading {
+	position				: absolute;
+	display					: none;
+	
+	top						: 272px;
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+	
+	width					: 640px;
+	height					: 480px;
+	
+	margin					: 0 auto;
+	padding					: 0;
+	
+	background				: url('../images/loading_screen.png');
+	
+	box-shadow				: 0px 0px 10px #000000;
+	
+	z-index					: 600;
+}
+#swave_bg {
+	position				: absolute;
+	display					: none;
+	
+	top						: 0px;
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+	
+	width					: 800px;
+	height					: 755px;
+	
+	margin					: 0 auto;
+	padding					: 0;
+	
+	background				: url('../images/bg.png');
+	
+	box-shadow				: 0px 0px 10px #000000;
+	
+	z-index					: 700;
+}
+#swave_title {
+	position				: absolute;
+	display					: block;
+	
+	top						: 14px;
+	left					: 15px;
+	
+	width					: 122px;
+	height					: 24px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/title.png');
+	
+	z-index					: 710;
+}
+#swave_min {
+	position				: absolute;
+	display					: block;
+	
+	top						: 15px;
+	right					: 95px;
+	
+	width					: 24px;
+	height					: 24px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/min_button.png');
+	
+	z-index					: 710;
+}
+#swave_max {
+	position				: absolute;
+	display					: block;
+	
+	top						: 15px;
+	right					: 55px;
+	
+	width					: 24px;
+	height					: 24px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/max_button.png');
+	
+	z-index					: 710;
+}
+#swave_close {
+	position				: absolute;
+	display					: block;
+	
+	top						: 15px;
+	right					: 15px;
+	
+	width					: 24px;
+	height					: 24px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/close_button.png');
+	
+	z-index					: 710;
+}
+#swave_info {
+	position				: absolute;
+	display					: block;
+	
+	top						: 60px;
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+	
+	width					: 787px;
+	height					: 33px;
+	
+	margin					: 0 auto;
+	padding					: 0;
+	
+	background				: url('../images/info.png');
+	
+	z-index					: 700;
+}
+#swave_eq {
+	position				: absolute;
+	display					: none;
+	
+	top						: 150px;
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+	
+	width					: 285px;
+	height					: 115px;
+	
+	margin					: 0 auto;
+	padding					: 0;
+	
+	background				: url('../images/eq.png');
+	
+	z-index					: 700;
+}
+#swave_screen {
+	position				: absolute;
+	display					: block;
+	
+	top						: 267px;
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+	
+	width					: 307px;
+	height					: 254px;
+	
+	margin					: 0 auto;
+	padding					: 0;
+	
+	background				: url('../images/screen.png');
+	
+	z-index					: 700;
+}
+#swave_icon {
+	position				: absolute;
+	display					: block;
+	
+	top						: 45px;
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+	
+	width					: 126px;
+	height					: 126px;
+	
+	margin					: 0 auto;
+	padding					: 0;
+	
+	background				: url('../images/wave_icon.png');
+	
+	z-index					: 750;
+}
+#swave_wing {
+	position				: absolute;
+	display					: block;
+	
+	top						: 45px;
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+	
+	width					: 126px;
+	height					: 126px;
+	
+	margin					: 0 auto;
+	padding					: 0;
+	
+	background				: url('../images/wave_wing.png');
+	
+	z-index					: 740;
+}
+#swave_left_speaker {
+	position				: absolute;
+	display					: block;
+	
+	top						: 390px;
+	left					: 160px;
+	
+	width					: 76px;
+	height					: 130px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/speaker.png');
+	
+	z-index					: 740;
+}
+#swave_right_speaker {
+	position				: absolute;
+	display					: block;
+	
+	top						: 390px;
+	right					: 160px;
+	
+	width					: 76px;
+	height					: 130px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/speaker.png');
+	
+	z-index					: 740;
+}
+#swave_play {
+	position				: absolute;
+	display					: block;
+	
+	bottom					: 110px;
+	left					: 0;
+	right					: 0;
+	
+	width					: 100px;
+	height					: 100px;
+	
+	margin					: 0 auto;
+	padding					: 0;
+	
+	background				: url('../images/play.png');
+	
+	z-index					: 750;
+}
+#swave_stop {
+	position				: absolute;
+	display					: none;
+	
+	bottom					: 110px;
+	left					: 0;
+	right					: 0;
+	
+	width					: 100px;
+	height					: 100px;
+	
+	margin					: 0 auto;
+	padding					: 0;
+	
+	background				: url('../images/stop.png');
+	
+	z-index					: 750;
+}
+#swave_sound_on {
+	position				: absolute;
+	display					: block;
+	
+	bottom					: 40px;
+	left					: 60px;
+	
+	width					: 55px;
+	height					: 67px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/sound_on.png');
+	
+	z-index					: 740;
+}
+#swave_sound_off {
+	position				: absolute;
+	display					: none;
+	
+	bottom					: 40px;
+	left					: 60px;
+	
+	width					: 55px;
+	height					: 67px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/sound_off.png');
+	
+	z-index					: 740;
+}
+#swave_sound_bar_on {
+	position				: absolute;
+	display					: block;
+	
+	bottom					: 68px;
+	right					: 60px;
+	
+	width					: 603px;
+	height					: 13px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/bar.png');
+	
+	z-index					: 740;
+}
+#swave_sound_bar_off {
+	position				: absolute;
+	display					: none;
+	
+	bottom					: 68px;
+	right					: 60px;
+	
+	width					: 603px;
+	height					: 13px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/bar_off.png');
+	
+	z-index					: 740;
+}
+#girl_head {
+	position				: absolute;
+	display					: block;
+	
+	bottom					: 150px;
+	left					: 30px;
+	
+	width					: 126px;
+	height					: 252px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/girl_head.png');
+	
+	z-index					: 800;
+}
+#girl_body {
+	position				: absolute;
+	display					: block;
+	
+	bottom					: 150px;
+	left					: 30px;
+	
+	width					: 126px;
+	height					: 252px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/girl_body.png');
+	
+	z-index					: 790;
+}
+#girl_leg {
+	position				: absolute;
+	display					: block;
+	
+	bottom					: 150px;
+	left					: 30px;
+	
+	width					: 126px;
+	height					: 252px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/girl_leg.png');
+	
+	z-index					: 780;
+}
+#boy_head {
+	position				: absolute;
+	display					: block;
+	
+	bottom					: 150px;
+	right					: 30px;
+	
+	width					: 126px;
+	height					: 252px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/boy_head.png');
+	
+	z-index					: 800;
+}
+#boy_body {
+	position				: absolute;
+	display					: block;
+	
+	bottom					: 150px;
+	right					: 30px;
+	
+	width					: 126px;
+	height					: 252px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/boy_body.png');
+	
+	z-index					: 790;
+}
+#boy_leg {
+	position				: absolute;
+	display					: block;
+	
+	bottom					: 150px;
+	right					: 30px;
+	
+	width					: 126px;
+	height					: 252px;
+	
+	margin					: 0;
+	padding					: 0;
+	
+	background				: url('../images/boy_leg.png');
+	
+	z-index					: 780;
+}

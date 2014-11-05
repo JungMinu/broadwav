@@ -1,0 +1,1552 @@
+/*
+*	Theme Name: GDE Broadway Layout ver 1.0
+*	Theme URI: http://Desirenvy.COM
+*	Author: Greed Desire Envy
+*	Author URI: http://Desirenvy.COM
+*	Description: Broadwav
+*	Version: 1.0
+*	License: GNU General Public License v2 or later
+*	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*	Tags: Broadway, Broadway.com
+*	Text Domain: Broadway
+*
+*	------------- Greed Desire Envy -------------
+*	Last Update : 2014 / 07 / 09
+*	Phone : +82 10 9999 7990
+*	Desirenvy @ gmail . com
+*	Desirenvy . COM
+*	Copyright At GDE All Right Reserved. By GDE.
+*	Licenses are CC - BY - NC - ND
+*	Sub-Package GDE
+*	since 2014 GDE - Broadway Layout ver 1.0
+*	------------- Greed Desire Envy -------------
+*/
+
+/* CSS Written Order */
+
+/*
+*	1. Main Properties
+*		1) Position					: Relative, Absolute, Fixed;
+*		2) Display					: Block , None;
+*		3) Float					: Left , Right;
+*		4) Visibility				: hidden;
+*		5) Opacity					: 1;
+*		
+*	2. Location
+*		1) Top						: 0px;
+*		2) Bottom					: 0px;
+*		3) Left						: 0px;
+*		4) Right					: 0px;
+*		
+*	3. Scale
+*		1) Width					: 100%
+*			1-1) Min-Width				: 320px;
+*			1-2) Max-width				: 1200px;
+*		2) Height					: auto; 
+*			2-1) Min-Height				: 150px;
+*			2-2) Max-Height				: 300px;
+*
+*	4. Margin, Padding
+*		1) Margin					: 0px auto;
+*		2) Padding					: 0px 10px 0px 10px;
+*		
+*	5. Background
+*		1) Background-color			: #FFFFFF
+*		2) Background-image			: url('../images/background.png')
+*		3) Background				: Black url('../images/background.png') 5px 5px no-repeat;
+*		4) filter					: none;
+*		
+*	6. Border
+*		1)Border					: 1px solid rgba(220, 220, 220, 1);
+*
+*	7. Border-Radius
+*		1) -webkit-Border-radius	: 13px;
+*		2) -moz-Border-radius		: 13px;
+*		3) Border-radius			: 13px;
+*		
+*	8. Font Properties
+*		1) Color					: #CCCCCC;
+*		2) Font-Size				: 10.5pt;
+*		3) Line-Height				: 25px;
+*		4) Letter-Spacing			: 0.1px;
+*		5) Text-Decoration			: none, underline;
+*		6) Text-Shadow				: 0 0 3px #444444;
+*		
+*	9. Cursor or ETC
+*		1) Cursor					: pointer;
+*		2) list-style				: none;
+*		3) Outline					: none;
+*		4) Box-sizing				: border-box;
+*
+*	10. Z-index
+*		1) Z-index					: 1000;
+*		
+*	11. Box-sizing
+*		1) -webkit-Box-sizing		: border-box;
+*		2) -moz-Box-sizing			: border-box;
+*		3) -ms-Box-sizing			: border-box;
+*		4) -o-Box-sizing			: border-box;
+*		5) Box-sizing				: border-box;
+*
+*	12. Box-shadow
+*		1) -webkit-Box-shadow		: 0px 0px 10px rgba(0, 0, 0, 0.2);
+*		2) -moz-Box-shadow			: 0px 0px 10px rgba(0, 0, 0, 0.2);
+*		3) -o-Box-shadow			: 0px 0px 10px rgba(0, 0, 0, 0.2);
+*		4) -ms-Box-shadow			: 0px 0px 10px rgba(0, 0, 0, 0.2);
+*		5) Box-shadow				: 0px 0px 10px rgba(0, 0, 0, 0.2);
+*
+*	13. Transition
+*		1) -webkit-Transition		: all 0.5s ease;
+*		2) -moz-Transition			: all 0.5s ease;
+*		3) -o-Transition			: all 0.5s ease;
+*		4) Transition				: all 0.5s ease;
+*		
+*	This Written Order Is Pretty Adaptability In This CSS Page.
+*	
+*	***** Please Do Not Using Reference Doc *****
+*	
+*/
+/**********************************************************************/
+/*                             GLOBAL PART                            */
+/**********************************************************************/
+html, body {
+	width					: 100%;
+	height					: 100%;
+
+	margin					: 0;
+	padding					: 0;
+
+	font-family				: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+/**********************************************************************/
+/*                             LOGIN PART                             */
+/**********************************************************************/
+#LOGIN_BG{
+	position				: fixed;
+	display					: block;
+
+	width					: 100%;
+	height					: 50%;
+
+	background				: rgba(32,216,244,1);
+
+	box-sizing				: border-box;
+}
+#LOGIN_CONTAINER {
+	position				: fixed;
+	display					: block;
+
+	width					: 100%;
+	height					: 100%;
+
+	box-sizing				: border-box;
+
+	z-index					: 450;
+}
+#LOGIN_WINDOW {
+	position				: fixed;
+	display					: block;
+
+	top						: 0; 
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+
+	width 					: 90%;
+	height					: 540px;
+
+	max-width				: 520px;
+	min-width				: 280px;
+
+	margin 					: auto;
+	padding					: 0;
+
+	box-sizing				: border-box;
+	
+	z-index					: 200;
+}
+.LOGIN_TITLE {
+	width 					: 100%;
+	
+	padding-bottom 			: 10px;
+	
+	text-align 				: center;
+}
+#SWAVELATE_LOGIN {
+	height					: auto;
+
+	background				: #FFFFFF;
+
+	border					: 1px solid rgba(0,0,0,0.1);
+	border-radius			: 4px;
+	
+	margin 					: auto;
+	padding					: 10px 20px 10px 20px;
+
+	box-sizing				: border-box;
+}
+	.LOGIN_TEXT {
+		height					: 25px;
+		
+		margin-top				: 15px;
+		margin-bottom			: 25px;
+
+		color					: #000000;
+		font-size				: 20px;
+		font-weight				: bold;
+		line-height				: 20px;
+		text-transform			: capitalize;
+		text-decoration			: none;
+	}
+	.USER_ID {
+		margin-bottom			: 10px;
+	}
+	.USER_ID input {
+		width 					: 100%;
+		height					: 50px;
+
+		margin 					: auto;
+		padding					: 10px;
+
+		background-color		: #FFFFFF;
+		background-image		: none;
+
+		border					: 1px solid rgba(0,0,0,0.1);
+		border-radius			: 4px;
+
+		color					: #000000;
+		font-size				: 13px;
+		text-transform			: capitalize;
+		text-decoration			: none;
+
+		outline 				: none;
+		resize 					: none;
+		
+		box-sizing				: border-box;
+	}
+	.PASSWORD {
+		margin-bottom			: 10px;
+	}
+	.PASSWORD input {
+		width 					: 100%;
+		height					: 50px;
+
+		margin 					: auto;
+		padding					: 10px;
+
+		background-color		: #FFFFFF;
+		background-image		: none;
+
+		border					: 1px solid rgba(0,0,0,0.1);
+		border-radius			: 4px;
+
+		color					: #000000;
+		font-size				: 13px;
+		text-transform			: capitalize;
+		text-decoration			: none;
+
+		outline 				: none;
+		resize 					: none;
+		
+		box-sizing				: border-box;
+	}
+	.SWAVELATE_LOGIN_BUTTON button{
+		width 					: 100%;
+		height					: 50px;
+
+		margin 					: auto auto 10px auto;
+
+		background-color		: #20D8F4 !important;
+		background-image		: none !important;
+
+		border					: 1px solid rgba(32,216,244,1) !important;
+		border-radius			: 4px;
+
+		color					: #FFFFFF !important;
+		font-size				: 14.5px;
+		font-weight				: bold;
+		line-height				: 20px;
+		text-transform			: capitalize;
+		text-decoration			: none;
+
+		outline 				: none;
+		resize 					: none;
+	}
+		.SWAVELATE_LOGIN_BUTTON button:active {
+			width 					: 100%;
+			height					: 50px;
+
+			margin 					: auto;
+
+			background-color		: #FFFFFF !important;
+			background-image		: none !important;
+
+			border					: 1px solid rgba(32,216,244,1) !important;
+			border-radius			: 4px;
+
+			color					: #20D8F4 !important;
+
+			outline 				: none;
+			resize 					: none;
+		}
+	.SWAVELATE_LOGIN_CHECK {
+		margin-bottom			: 10px;
+		
+		color					: #BBBBBB;
+		font-size				: 13px;
+		text-transform			: capitalize;
+		text-decoration			: none;
+	}
+	.SWAVELATE_LOGIN_MENU {
+		padding-top				: 10px;
+		margin-bottom			: 10px;
+		
+		border-top				: 1px solid rgba(0,0,0,0.1);
+		
+		color					: rgba(0,0,0,0.1);
+		text-align				: center;
+	}
+	.SWAVELATE_LOGIN_MENU a {
+		color					: #05B3E8;
+		font-size				: 13px;
+		text-transform			: capitalize;
+		text-decoration			: none;
+	}
+	.SWAVELATE_BADGE {
+		display					: block;
+		text-align				: center;
+	}
+	.SWAVELATE_BADGE_S {
+		display					: none;
+		text-align				: center;
+		}
+	@media screen and (max-width: 576px) {
+		.SWAVELATE_BADGE {
+			display					: none;
+		}
+		.SWAVELATE_BADGE_S {
+			display					: block;
+		}
+	}
+/**********************************************************************/
+/*                             HEADER PART                            */
+/**********************************************************************/
+#COMPOSE_WINDOW_CONTAINER {
+	position				: fixed;
+	display					: none;
+
+	width					: 100%;
+	height					: 100%;
+
+	background				: rgba(0,0,0,0.8);
+
+	box-sizing				: border-box;
+
+	z-index					: 450;
+}
+#COMPOSE_CLOSE {
+	position				: fixed;
+	display					: none;
+
+	top						: 0;
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+
+	width					: 100%;
+	height					: 100%;
+
+	margin					: 0 auto;
+	z-index					: 100;
+}
+#COMPOSE_WINDOW {
+	position				: fixed;
+	display					: block;
+
+	top						: 0; 
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+
+	width 					: 90%;
+	height					: 295px;
+
+	max-width				: 520px;
+	min-width				: 280px;
+
+	margin 					: auto;
+	padding					: 10px;
+
+	background				: #FFFFFF;
+
+	border					: 1px solid rgba(0,0,0,0.1);
+	border-radius			: 4px;   
+
+	box-sizing				: border-box;
+	
+	z-index					: 200;
+}
+
+.COMPOSE_WINDOW_TEXT {
+	position				: relative;
+	display					: block;
+
+	top						: 0; 
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+
+	width 					: 100%;
+	height					: 180px !important;
+
+	margin 					: auto;
+
+	background				: #FFFFFF;
+
+	box-sizing				: border-box;
+}
+.COMPOSE_WINDOW_TEXT textarea {
+	width 					: 100%;
+	height					: 180px;
+
+	background 				: #FFFFFF;
+
+	border					: 1px solid rgba(0,0,0,0.1) !important;
+	border-radius			: 4px;
+
+	outline 				: none;
+	resize 					: none;
+}
+.COMPOSE_WINDOW_SUBMIT {
+	position				: relative;
+	display					: block;
+	float					: left;
+
+	top						: 12px; 
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+
+	width 					: 100%;
+
+	margin 					: 0px auto;
+
+	box-sizing				: border-box;
+}
+	.COMPOSE_WINDOW_SUBMIT button{
+		width 					: 100%;
+		height					: 50px;
+
+		margin 					: auto;
+
+		background-color		: #20D8F4 !important;
+		background-image		: none !important;
+
+		border					: 1px solid rgba(32,216,244,1) !important;
+		border-radius			: 4px;
+
+		color					: #FFFFFF !important;
+		font-size				: 14.5px;
+		font-weight				: bold;
+		line-height				: 20px;
+		text-transform			: capitalize;
+		text-decoration			: none;
+
+		outline 				: none;
+		resize 					: none;
+	}
+		.COMPOSE_WINDOW_SUBMIT button:active {
+			width 					: 100%;
+			height					: 50px;
+
+			margin 					: auto;
+
+			background-color		: #FFFFFF !important;
+			background-image		: none !important;
+
+			border					: 1px solid rgba(32,216,244,1) !important;
+			border-radius			: 4px;
+
+			color					: #20D8F4 !important;
+
+			outline 				: none;
+			resize 					: none;
+		}
+.COMPOSE_IMAGE_UPLOAD input[type="file"] {
+	position				: fixed;
+	top						: -1000px;
+}
+.COMPOSE_IMAGE_UPLOAD {
+	position				: relative;
+	display					: block;
+	float					: left;
+
+	top						: 10px; 
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+
+	height					: 30px;
+
+	margin 					: auto;
+
+	background				: #FFFFFF;
+
+	color					: #999999 !important;
+	font-size				: 14px;
+	font-weight				: 200;
+	line-height				: 30px;
+	text-transform			: capitalize;
+	text-decoration			: none;
+	text-align				: right;
+
+	box-sizing				: border-box;
+}
+.COMPOSE_IMAGE_UPLOAD:hover {
+	color					: #20D8F4 !important;
+}
+.COMPOSE_IMAGE_UPLOAD:active {
+	top						: 11px;
+}
+.COMPOSE_TEXT_COUNTER {
+	position				: relative;
+	display					: block;
+	float					: right;
+
+	top						: 10px; 
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+
+	width					: 42px;
+	height					: 30px;
+
+	margin 					: auto;
+
+	background				: #FFFFFF;
+
+	box-sizing				: border-box;
+}
+.COMPOSE_TEXT_COUNTER input {
+	float					: right;
+
+	width					: 42px;
+	height					: 30px;
+
+	margin 					: 0;
+	padding 				: 0;
+
+	background 				: #FFFFFF;
+	border					: none;
+
+	color					: #999999 !important;
+	font-size				: 14px;
+	font-weight				: 200;
+	line-height				: 20px;
+	text-transform			: capitalize;
+	text-decoration			: none;
+	text-align				: right;
+
+	pointer-events 			: none;
+	box-shadow				: none;
+	outline 				: none;
+	resize 					: none;
+}
+.TOPBAR {
+	position				: fixed;
+
+	width					: 100%;
+	height					: 43px;
+
+	border-bottom			: 1px solid rgba(0,0,0,0.15);
+	background-color		: #20D8F4;
+
+	z-index					: 400;
+}
+.TOPBAR_WAPPER {
+	position				: relative;
+
+	max-width				: 1024px;
+
+	margin					: 0 auto;
+}
+.TOPBAR_BUTTON {
+	display					: inline;
+	float					: left;
+	list-style				: none;
+}
+.TOPBAR_BUTTON {
+	margin					: 0;
+	padding					: 0;
+
+	width					: 44px;
+	height					: 44px !important;
+
+	border-right			: 1px solid #5786AA;
+	border-right-color		: rgba(255, 255, 255, 0.1);
+
+	border-left				: 1px solid #5786AA;
+	border-left-color		: rgba(255, 255, 255, 0.1);
+}
+
+.TOPBAR_BUTTON > li > a {
+	position				: relative;
+	display					: block;
+	padding					: 11px 11px 13px 12px;
+
+	border-right			: 1px solid #06365F;
+	border-right-color		: rgba(0, 0, 0, 0.1);
+	border-left				: 1px solid #06365F;
+	border-left-color		: rgba(0, 0, 0, 0.1);
+}
+.TOPBAR_BUTTON > li > a i {
+	display					: block;
+	float					: left;
+
+	height					: 28px;
+	width					: 28px;
+
+	margin					: -5px 4px 0 -8px;
+}
+.TOPBAR_HOME {
+	position				: absolute;
+
+	top						: 0;
+	left					: -1px;
+}
+.TOPBAR_NOTIFICATION {
+	position				: absolute;
+
+	top						: 0;
+	left					: 43px;
+}
+.TOPBAR_MESSAGE {
+	position				: absolute;
+
+	top						: 0;
+	left					: 88px;
+}
+.TOPBAR_PROFILE {
+	position				: absolute;
+
+	top						: 0;
+	left					: 133px;
+}
+.TOPBAR_HOME_ICON {
+	height					: 44px !important;
+	width					: 44px !important;
+	padding					: 0 !important;
+}
+.TOPBAR_HOME_ICON i{
+	display					: block;
+	position				: absolute;
+
+	height					: 27px !important;
+	width					: 27px !important;
+
+	left					: 9px;
+	top						: 9px;
+
+	margin					: 0 !important;
+	padding					: 0 !important;	
+	
+	background				: url(../images/home.png) no-repeat;
+}
+.TOPBAR_HOME_ICON:hover {
+	background-color		: rgba(255, 255, 255, 0.1);
+}
+
+.TOPBAR_HOME_ICON:active {
+	background-color		: #1c5380;
+	background-color		: rgba(6, 54, 95, 0.35);
+}
+.TITLE {
+	position				: absolute;
+
+	width					: 122px;
+	height					: 24px;
+
+	top 					: 10px;
+	bottom 					: 0px;
+	left 					: 0px;
+	right 					: 0px;
+
+	margin 					: 0 auto;
+	padding 				: 0;
+
+	background 				: url(http://broadwav.com/windows/images/title.png) no-repeat 0 0;
+
+	background-size			: 122px 24px;
+
+	text-indent				: -9999em
+}
+@media screen and (max-width: 520px) {
+	.TITLE {
+		position				: absolute;
+
+		width					: 80px;
+		height					: 15.7px;
+
+		top 					: 14.15px;
+		bottom 					: 0px;
+		left 					: 0px;
+		right 					: 44px;
+
+		margin 					: 0 auto;
+		padding 				: 0;
+
+		background 				: url(http://broadwav.com/windows/images/title.png) no-repeat 0 0;
+
+		background-size			: 80px 15.7px;
+
+		text-indent				: -9999em
+	}
+}
+.TOPBAR_HOME {
+	position				: absolute;
+
+	top						: 0;
+	left					: -2px;
+}
+.TOPBAR_HOME_ICON {
+	height					: 44px !important;
+	width					: 44px !important;
+	padding					: 0 !important;
+	cursor					: pointer;
+}
+.TOPBAR_HOME_ICON i{
+	display					: block;
+	position				: absolute;
+
+	height					: 27px !important;
+	width					: 27px !important;
+
+	left					: 9px;
+	top						: 9px;
+
+	margin					: 0 !important;
+	padding					: 0 !important;	
+
+	background				: url(../images/home.png) no-repeat;
+}
+.TOPBAR_HOME_ICON:hover {
+	background-color		: rgba(255, 255, 255, 0.1);
+}
+
+.TOPBAR_HOME_ICON:active {
+	background-color		: #1c5380;
+	background-color		: rgba(6, 54, 95, 0.35);
+}
+.TOPBAR_ACCOUNT {
+	position				: absolute;
+	top						: 0;
+	right					: 45px;
+	cursor					: pointer;
+}
+.TOPBAR_ACCOUNT > .TOPBAR_BUTTON {
+	margin					: 0;
+	padding					: 0;
+
+	width					: auto !important;
+
+	border-left				: 1px solid #5786AA;
+	border-left-color		: rgba(255, 255, 255, 0.1);
+
+	border-right			: none;
+}
+.TOPBAR_ACCOUNT > .TOPBAR_BUTTON:hover {
+	background-color		: rgba(255, 255, 255, 0.1);
+}
+
+.TOPBAR_ACCOUNT > .TOPBAR_BUTTON:active {
+	background-color		: #1c5380;
+	background-color		: rgba(6, 54, 95, 0.35);
+}
+.TOPBAR_ACCOUNT > .TOPBAR_BUTTON > li > a {
+	position				: relative;
+	display					: block;
+	padding					: 11px 13px 13px 11px;
+
+	height					: 20px;
+
+	border-left				: 1px solid #06365F;
+	border-left-color		: rgba(0, 0, 0, 0.1);
+
+	border-right			: none;
+
+	text-decoration			: none;
+}
+.TOPBAR_ACCOUNT > .TOPBAR_BUTTON > li > a > strong {
+	color					: #FFFFFF;
+	font-size				: 14.5px;
+	font-weight				: bold;
+	line-height				: 20px;
+	text-shadow				: rgba(3, 27, 47, 0.5) 0px 1px 0px;
+	text-transform			: capitalize;
+	text-decoration			: none;
+}
+@media screen and (max-width: 520px) {
+	.TOPBAR_ACCOUNT > .TOPBAR_BUTTON > li > a {
+		padding					: 11px 3px 13px 12px;
+	}
+	.TOPBAR_ACCOUNT > .TOPBAR_BUTTON > li > a > strong {
+		display					: none;
+	}
+}
+.TOPBAR_ACCOUNT > .TOPBAR_BUTTON > li > a > strong:active {
+	color					: #EEEEEE;
+}
+.TOPBAR_ACCOUNT > .TOPBAR_BUTTON > li > a > span {
+	position				: relative;
+	display					: block;
+	float					: left;
+
+	line-height				: 20px;
+
+	margin					: -2px 10px 1px -1px;
+}
+.USER_PICTURE {
+	width					: 24px;
+	height					: 24px;
+
+	border-radius			: 3px;
+	box-shadow				: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+
+	background-size			: 24px 24px;
+}
+#USER_CLOSE {
+	position				: fixed;
+	display					: none;
+
+	top						: 0;
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+
+	width					: 100%;
+	height					: 100%;
+
+	margin					: 0 auto;
+	z-index					: 50;
+}
+.USER_MENU {
+	position				: absolute;
+	display					: none;
+
+	width					: 106px;
+	height					: auto;
+
+	top						: 48px;		
+	right					: 0;
+	left					: 0;
+
+	margin					: 0 auto;
+
+	background				: #FFFFFF;
+
+	border-radius			: 4px;
+	border					: 1px solid rgba(0, 0, 0, 0.1);
+
+	z-index					: 400;
+}
+.USER_MENU:after, 
+.USER_MENU:before {
+	position				: absolute;
+
+	bottom					: 100%;
+	left					: 50%;
+
+	height					: 0;
+	width					: 0;
+
+	border					: solid transparent;
+
+	content					: " ";
+
+	pointer-events			: none;
+}
+.USER_MENU:after {
+	margin-left				: -10px;
+
+	border-color			: rgba(255, 255, 255, 0);
+	border-bottom-color		: #FFFFFF;
+	border-width			: 10px;
+}
+.USER_MENU:before {
+	margin-left				: -11px;
+
+	border-color			: rgba(0, 0, 0, 0);
+	border-bottom-color		: rgba(0, 0, 0, 0.1);
+	border-width			: 11px;
+}
+@media screen and (max-width: 520px) {
+	.USER_MENU {
+		left					: -28px;
+	}
+}
+.USER_MENU > ul {
+	padding					: 0;
+	margin					: 0;
+	list-style				: none;
+}
+.USER_MENU > ul > li {
+	padding					: 3px;
+	margin					: 5px 5px 5px 5px;
+
+	border-radius			: 3px;
+}
+.USER_MENU > ul > li > a {
+	font-family				: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size				: 14px;
+	font-weight				: 700;
+	color					: #999999;
+	cursor					: pointer;
+	text-decoration			: none;
+}
+.USER_MENU > ul > li:hover {
+	background 				: #20D8F4;
+}
+.USER_MENU > ul > li:hover > a {
+	color 					: #FFFFFF;
+}
+.USER_MENU_BAR{
+	background				: rgba(0, 0, 0, 0.1);
+	width					: 100%;
+	height					: 1px;
+}
+.TOPBAR_COMPOSE {
+	position				: absolute;
+
+	top						: 0;
+	right					: 0;
+}
+.TOPBAR_COMPOSE_ICON {
+	height					: 44px !important;
+	width					: 44px !important;
+	padding					: 0 !important;
+	cursor					: pointer;
+}
+.TOPBAR_COMPOSE_ICON i{
+	display					: block;
+	position				: absolute;
+
+	height					: 27px !important;
+	width					: 27px !important;
+
+	left					: 9px;
+	top						: 8px;
+
+	margin					: 0 !important;
+	padding					: 0 !important;	
+	
+	background				: url(../images/compose.png) no-repeat;
+}
+.TOPBAR_COMPOSE_ICON:hover {
+	background-color		: rgba(255, 255, 255, 0.1);
+}
+.TOPBAR_COMPOSE_ICON:active {
+	background-color		: #1c5380;
+	background-color		: rgba(6, 54, 95, 0.35);
+}
+/**********************************************************************/
+/*                            CONTENTS PART                           */
+/**********************************************************************/
+.MAIN {
+	max-width				: 938px;
+
+	margin					: 0 auto;
+
+	padding					: 43px;
+
+	border-radius			: 0 0 4px 4px;
+
+	border-top				: none;
+	border-left				: 1px solid rgba(0, 0, 0, 0.1);
+	border-right			: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom			: 1px solid rgba(0, 0, 0, 0.1);
+}
+.TIMELINE_CONTAINER {
+	margin					: 0;
+	padding					: 0;
+
+	list-style				: none;
+}
+/* TIME LINE SIDEBAR */
+.TIMELINE_LIST .TIMELINE_SIDEBAR,
+.TIMELINE_LIST:first-child .TIMELINE_SIDEBAR {
+	display					: inline-block;
+
+	width					: 194px;
+	
+	vertical-align			: top;
+	text-align				: right;
+}
+.TIMELINE_LIST .TIMELINE_SIDEBAR {
+	padding-top				: 18px;
+}
+.TIMELINE_LIST:first-child .TIMELINE_SIDEBAR {
+	padding-top				: 34px;
+}
+.NAME_PLATE_PICTURE {
+	display					: inline-block;
+	float					: right;
+
+	width					: 38px;
+	height					: 38px;
+	
+	margin-left				: 10px;
+	margin-right			: 15px;
+
+	border-radius			: 3px;
+	box-shadow				: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+
+	background-size			: cover;
+}
+.NAME_PLATE_USER a {
+	display					: inline-block;
+
+	color					: #05B3E8;
+	font-size				: 14px;
+	font-weight				: 700;
+	text-decoration			: none;
+	text-transform			: Capitalize;
+}
+.NAME_PLATE_TIME {
+	display					: inline-block;
+
+	color					: #999999;
+	font-size				: 12px;
+	font-weight				: 300;
+	text-decoration			: none;
+	text-transform			: Capitalize;
+}
+/* TIMELINE SIDEBAR */
+
+/* TIMELINE ITME */
+.TIMELINE_LIST .TIMELINE_ITEM,
+.TIMELINE_LIST:first-child .TIMELINE_ITEM,
+.TIMELINE_LIST:last-child .TIMELINE_ITEM {
+	display					: inline-block;
+
+	width					: 100%;
+	max-width				: 576px;
+
+	height					: auto;
+	min-width				: 240px;
+
+	margin					: 0;
+
+	background-color		: #EFFCFE;
+
+	border-top				: none;
+	border-left				: 1px solid rgba(0, 0, 0, 0.1);
+	border-right			: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom			: none;
+
+	box-sizing				: border-box;
+	list-style				: none;
+}
+.TIMELINE_LIST .TIMELINE_ITEM {
+	padding					: 16px 32px 16px 32px;
+}
+.TIMELINE_LIST:first-child .TIMELINE_ITEM {
+	padding					: 32px 32px 16px 32px;
+}
+.TIMELINE_LIST:last-child .TIMELINE_ITEM {
+	padding					: 16px 32px 32px 32px;
+
+	border-top				: none;
+	border-left				: 1px solid rgba(0, 0, 0, 0.1);
+	border-right			: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom			: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius			: 0px 0px 4px 4px;
+}
+.LOAD_MORE_BUTTON {
+	position				: relative;
+	display					: block;
+	float					: left;
+
+	top						: 0px; 
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+
+	width 					: 100%;
+
+	margin 					: 0px auto;
+
+	box-sizing				: border-box;
+}
+	.LOAD_MORE_BUTTON button{
+		width 					: 100%;
+		height					: 50px;
+
+		margin 					: auto;
+
+		background-color		: #20D8F4 !important;
+		background-image		: none !important;
+
+		border					: 1px solid rgba(32,216,244,1) !important;
+		border-radius			: 4px;
+
+		color					: #FFFFFF !important;
+		font-size				: 14.5px;
+		font-weight				: bold;
+		line-height				: 20px;
+		text-transform			: capitalize;
+		text-decoration			: none;
+
+		outline 				: none;
+		resize 					: none;
+	}
+		.LOAD_MORE_BUTTON button:active {
+			width 					: 100%;
+			height					: 50px;
+
+			margin 					: auto;
+
+			background-color		: #FFFFFF !important;
+			background-image		: none !important;
+
+			border					: 1px solid rgba(32,216,244,1) !important;
+			border-radius			: 4px;
+
+			color					: #20D8F4 !important;
+
+			outline 				: none;
+			resize 					: none;
+		}
+.TIMELINE_ITEM_CONTAINER {
+	background-color		: #FFFFFF;
+
+	border					: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius			: 4px;
+
+	box-sizing				: border-box;
+}
+.TIMELINE_ITEM_PICTURE {
+	position				: relative;
+	display					: block;
+
+	max-width 				: 508px;
+	max-height 				: 508px;
+	
+	border-radius			: 3px 3px 0px 0px;
+	border-bottom			: 1px solid rgba(0, 0, 0, 0.1);
+
+	box-sizing				: border-box;
+	box-shadow				: rgba(255, 255, 255, 0.15) 0px 0px 0px 1px inset;
+	
+	background-repeat		: no-repeat;
+	background-size			: contain;
+	background-position		: center center;
+}
+	.TIMELINE_ITEM_PICTURE:after {
+		content					: '';
+		
+		display					: block;
+		
+		padding-top				: 100%;
+	}
+.TIMELINE_ITEM_MENU {
+	width					: 100%;
+	height					: 41px;
+
+	border-bottom			: 1px solid rgba(0, 0, 0, 0.1);
+}
+.MENU_LIKE_BUTTON {
+	position				: relative;
+	display					: inline;
+	float					: left;
+
+	width					: 49px;
+	height					: 41px;
+
+	border-right			: 1px solid rgba(0, 0, 0, 0.1);
+
+	cursor					: pointer
+}
+.MENU_LIKE_BUTTON_ON{
+	position				: absolute;
+	display					: none;
+
+	width					: 49px;
+	height					: 41px;
+
+	background				: url(../images/like_on.png) no-repeat;
+}
+.MENU_LIKE_BUTTON_OFF{
+	position				: absolute;
+	display					: block;
+	
+	width					: 49px;
+	height					: 41px;
+
+	background				: url(../images/like_off.png) no-repeat;
+}
+.MENU_LIKE_LIST {	
+	line-height				: 16px;
+	margin					: 0px 51px 0px 51px;
+	padding					: 12px;
+	
+	overflow				: hidden;
+	text-overflow			: ellipsis;
+	white-space				: nowrap;
+}
+.MENU_LIKE_LIST span {
+	color					: #999999;
+	font-size				: 12px;
+	font-weight				: 100;
+	text-decoration			: none;
+	text-transform			: Capitalize;
+}
+.MENU_BUTTON {
+	position				: relative;
+	display					: inline-block;
+	float					: right;
+
+	width					: 49px;
+	height					: 41px;
+
+	border-left				: 1px solid rgba(0, 0, 0, 0.1);
+	
+	background				: url(../images/button.png) no-repeat;
+	cursor					: pointer
+}
+#MENU_WINDOW_CLOSE {
+	position				: fixed;
+	display					: none;
+
+	top						: 0;
+	bottom					: 0;
+	left					: 0;
+	right					: 0;
+
+	width					: 100%;
+	height					: 100%;
+
+	margin					: 0 auto;
+	z-index					: 300;
+}
+.MENU_WINDOW_USER,
+.MENU_WINDOW_OTHERS {
+	position				: absolute;
+	display					: none;
+
+	width					: 106px;
+	height					: auto;
+
+	top						: 46px;		
+	left					: -30px;
+
+	margin					: 0 auto;
+
+	background				: #FFFFFF;
+
+	border-radius			: 4px;
+	border					: 1px solid rgba(0, 0, 0, 0.1);
+
+	z-index					: 350;
+}
+.MENU_WINDOW_USER:after, 
+.MENU_WINDOW_USER:before,
+.MENU_WINDOW_OTHERS:after, 
+.MENU_WINDOW_OTHERS:before {
+	position				: absolute;
+
+	bottom					: 100%;
+	left					: 50%;
+
+	height					: 0;
+	width					: 0;
+
+	border					: solid transparent;
+
+	content					: " ";
+
+	pointer-events			: none;
+}
+.MENU_WINDOW_USER:after,
+.MENU_WINDOW_OTHERS:after {
+	margin-left				: -10px;
+
+	border-color			: rgba(255, 255, 255, 0);
+	border-bottom-color		: #FFFFFF;
+	border-width			: 10px;
+}
+.MENU_WINDOW_USER:before,
+.MENU_WINDOW_OTHERS:before {
+	margin-left				: -11px;
+
+	border-color			: rgba(0, 0, 0, 0);
+	border-bottom-color		: rgba(0, 0, 0, 0.1);
+	border-width			: 11px;
+}
+.MENU_WINDOW_USER > ul,
+.MENU_WINDOW_OTHERS > ul {
+	padding					: 0;
+	margin					: 0;
+	list-style				: none;
+}
+.MENU_WINDOW_USER > ul > li, 
+.MENU_WINDOW_OTHERS > ul > li {
+	padding					: 3px;
+	margin					: 5px 5px 5px 5px;
+
+	border-radius			: 3px;
+}
+.MENU_WINDOW_USER > ul > li > a,
+.MENU_WINDOW_OTHERS > ul > li > a {
+	font-family				: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size				: 14px;
+	font-weight				: 700;
+	color					: #999999;
+	cursor					: pointer;
+	text-decoration			: none;
+}
+.MENU_WINDOW_USER > ul > li:hover,
+.MENU_WINDOW_OTHERS > ul > li:hover {
+	background 				: #20D8F4;
+}
+.MENU_WINDOW_USER > ul > li:hover > a,
+.MENU_WINDOW_OTHERS > ul > li:hover > a {
+	color 					: #FFFFFF;
+}
+.MENU_WINDOW_BAR{
+	background				: rgba(0, 0, 0, 0.1);
+	width					: 100%;
+	height					: 1px;
+}
+.TIMELINE_ITEM_CONTENTS {
+	border-bottom			: 1px solid rgba(0, 0, 0, 0.1);
+}
+.TIMELINE_ITEM_CONTENTS_WRAPPER {
+	padding : 15px;
+}
+.TIMELINE_ITEM_CONTENTS_USER_PICTURE {
+	display					: inline-block;
+
+	width					: 24px;
+	height					: 24px;
+
+	vertical-align			: bottom;
+
+	border-radius			: 3px;
+	box-shadow				: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+
+	background-size			: 24px 24px;
+}
+.TIMELINE_ITEM_CONTENTS_USER_NAME {
+	display					: inline-block;
+}
+.TIMELINE_ITEM_CONTENTS_USER_NAME a {
+	color					: #05B3E8;
+	font-size				: 14px;
+	font-weight				: 700;
+	text-decoration			: none;
+	text-transform			: Capitalize;
+	line-height				: 24px;
+}
+.TIMELINE_ITEM_CONTENTS_TEXT {
+	display					: inline;
+
+	color					: #222222;
+	font-size				: 12px;
+	font-weight				: 100;
+	text-decoration			: none;
+	text-transform			: Capitalize;
+	line-height				: 24px;
+}
+.TIMELINE_ITEM_CONTENTS_LOAD_MORE {
+	text-align				: center;
+}
+.TIMELINE_ITEM_CONTENTS_LOAD_MORE a {
+	color					: #CCCCCC;
+	font-size				: 12px;
+	font-weight				: 100;
+	text-decoration			: none;
+	text-transform			: Capitalize;
+	line-height				: 24px;
+	
+	cursor					: pointer;
+}
+/* TIMELINE ITME */
+
+/* TIMELINE COMMENTS LIST */
+.COMMENTS_SCROLL {
+	margin					: 0;
+	padding					: 0;
+
+	list-style				: none;
+}
+.MORE_COMMENTS {
+	padding : 6px 15px 0px 15px;
+
+	color					: #999999;
+	font-size				: 12px;
+	font-weight				: 100;
+	text-decoration			: none;
+	text-transform			: Capitalize;
+	line-height				: 24px;
+
+	cursor					: pointer;
+}
+.TIMELINE_COMMENTS {
+	padding : 6px 15px 6px 15px;
+}
+.TIMELINE_COMMENTS:first-child {
+	padding : 12px 15px 6px 15px;
+}
+.TIMELINE_COMMENTS:last-child {
+	padding : 6px 15px 0px 15px;
+}
+.TIMELINE_COMMENT_USER_PICTURE {
+	display					: inline-block;
+
+	width					: 24px;
+	height					: 24px;
+
+	border-radius			: 3px;
+	box-shadow				: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+
+	background-size			: 24px 24px;
+	
+	vertical-align			: middle;
+}
+.TIMELINE_COMMENT_USER_NAME {
+	display					: inline-block;
+}
+	.TIMELINE_COMMENT_USER_NAME a {
+		color					: #05B3E8;
+		font-size				: 14px;
+		font-weight				: 700;
+		text-decoration			: none;
+		text-transform			: Capitalize;
+		line-height				: 24px;
+	}
+.TIMELINE_COMMENT_CONTENTS_TEXT {
+	display					: inline;
+	
+	color					: #222222;
+	font-size				: 12px;
+	font-weight				: 100;
+	text-decoration			: none;
+	text-transform			: Capitalize;
+	line-height				: 24px;
+}
+.TIMELINE_COMMENT_DELETE_BUTTON {
+	float					: right;
+}
+	.TIMELINE_COMMENT_DELETE_BUTTON a {
+		color					: #CCCCCC;
+		font-size				: 12px;
+		font-weight				: 100;
+		text-decoration			: none;
+		text-transform			: Capitalize;
+		line-height				: 24px;
+	}
+/* TIMELINE COMMENTS LIST */
+
+/* TIMELINE COMMENTS COMPOSE */
+.COMMENTS_COMPOSE {
+	padding 				: 12px;
+}
+	.TIMELINE_COMMNETS input[type=text] {
+		width					: 100%;
+
+		padding					: 9px;
+
+		border					: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius			: 4px;
+
+		box-shadow				: inset 0 1px 1px rgba(0,0,0,0.05);
+		box-sizing				: border-box;
+	}
+/* TIMELINE COMMENTS COMPOSE */
+
+/**********************************************************************/
+/*                             FOOTER PART                            */
+/**********************************************************************/
+.FOOTER_RELATIVE {
+	padding					: 8px 0px 7px 0px;
+
+	background				: #FFFFFF;
+	border					: none;
+
+	text-align				: center; 
+	letter-spacing			: -1px;
+
+	overflow				: hidden;
+	clear					: both;
+}
+	.FOOTER_RELATIVE nav, 
+	.FOOTER_RELATIVE nav ul {
+		margin					: 0;
+		padding					: 0; 
+	}
+	.FOOTER_RELATIVE nav,
+	.FOOTER_RELATIVE li {
+		display					: inline-block; 
+	}
+	.FOOTER_RELATIVE li {
+		margin					: 0; 
+	}
+	.FOOTER_RELATIVE a {
+		display					: block;
+
+		padding					: 8px 6px; 
+
+		color					: #05B3E8;
+		font-size				: 12px;
+		font-weight				: 700;
+		text-decoration			: none;
+		text-transform			: uppercase;
+	}
+.FOOTER_FIXED {
+	padding					: 8px 0px 7px 0px;
+
+	background				: #FFFFFF;
+	border-top				: 1px solid #DDDDDD;
+
+	text-align				: center; 
+	letter-spacing			: -1px;
+
+	overflow				: hidden;
+	clear					: both;
+}
+	.FOOTER_FIXED nav, 
+	.FOOTER_FIXED nav ul {
+		margin					: 0;
+		padding					: 0; 
+	}
+	.FOOTER_FIXED nav,
+	.FOOTER_FIXED li {
+		display					: inline-block; 
+	}
+	.FOOTER_FIXED li {
+		margin					: 0; 
+	}
+	.FOOTER_FIXED a {
+		display					: block;
+
+		padding					: 8px 6px; 
+		
+		color					: #05B3E8;
+		font-size				: 12px;
+		font-weight				: 700;
+		text-decoration			: none;
+		text-transform			: uppercase;
+	}
+.COPYRIGHT {
+	display					: inline-block;
+
+	padding					: 8px 6px;
+	margin					: 0 0 0 8px;
+
+	color					: #BBBBBB;
+	letter-spacing			: -1px;
+	font-size				: 12px;
+	font-weight				: 700;
+	text-decoration			: none;
+	text-transform			: uppercase;
+}
