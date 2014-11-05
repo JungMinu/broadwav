@@ -74,6 +74,5 @@ Flight::route('/@name', function($name){
 });//USER PAGE
 
 Flight::start();
-?>
-
 //connect
+?>
